@@ -140,6 +140,7 @@ main {
         }
     }
 
+    
     #carousel {
         display: flex;
         padding-top: 140px;
@@ -271,6 +272,10 @@ main {
             display: none;
         }
     }
+
+    #carousel {
+        overflow: hidden;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -284,6 +289,17 @@ main {
         width: 1200px;
         bottom: -100px;
         right: -150px;
+    }
+
+    
+    #carousel {
+        display: flex;
+        padding-top: 140px;
+        padding-bottom: 10px;
+
+        img {
+            width: 300px;
+        }
     }
 }
 
