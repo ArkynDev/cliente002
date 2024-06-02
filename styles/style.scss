@@ -245,7 +245,7 @@ main {
             div:first-child {
                 align-items: center;
                 justify-content: center;
-                height: 35%;
+                height: 25% !important;
 
                 #s2-img {
                     position: relative;
@@ -256,8 +256,10 @@ main {
 
             div:last-child {
                 justify-content: center;
-                padding-top: 50px;
+                padding-top: 100px;
                 overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+                height: 75% !important;
 
                 p {
                     padding: 0px 10px;
