@@ -230,10 +230,12 @@ main {
 
     #s3-title img {
         height: 30px;
-        padding-top: 40px;
+        padding-top: 50px;
     }
 
     #carrousel-container {
+        padding: 40px 0px !important;
+
         img {
             height: 230px;
         }
@@ -337,10 +339,12 @@ main {
 
     #s3-title img {
         height: 50px;
-        padding-top: 40px;
+        padding-top: 80px;
     }
 
     #carrousel-container {
+        padding-top: 80px !important;
+
         img {
             height: 180px;
         }
