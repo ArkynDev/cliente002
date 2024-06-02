@@ -88,12 +88,6 @@ main {
   justify-content: end;
   position: relative;
 }
-#s2 #s2-container div:first-child img {
-  position: absolute;
-  width: 1200px;
-  bottom: -100px;
-  right: -150px;
-}
 #s2 #s2-container div:last-child {
   display: flex;
   padding-top: 150px;
@@ -213,11 +207,46 @@ main {
     background-image: none;
     box-shadow: none;
   }
+  #s2 #s2-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #s2 #s2-container div {
+    width: 100%;
+  }
+  #s2 #s2-container div:first-child {
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+  }
+  #s2 #s2-container div:first-child #s2-img {
+    position: relative;
+    width: 800px;
+    padding-right: 325px;
+  }
+  #s2 #s2-container div:last-child {
+    justify-content: center;
+    padding-top: 50px;
+    overflow-y: scroll;
+  }
+  #s2 #s2-container div:last-child p {
+    padding: 0px 10px;
+  }
+  #s2 #s2-bottom {
+    display: none;
+  }
 }
-@media screen and (min-width: 769px) and (max-width: 1279px) {
+@media screen and (min-width: 769px) {
   #s2 {
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
+  }
+  #s2-img {
+    position: absolute;
+    width: 1200px;
+    bottom: -100px;
+    right: -150px;
   }
 }
 .text-bold {
