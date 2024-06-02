@@ -4,6 +4,8 @@
   justify-content: center;
   gap: 6px;
   padding: 12px 24px;
+  font-weight: 500;
+
   border: none;
   clip-path: polygon(0 0, 90% 0, 100% 30%, 100% 100%, 10% 100%, 0% 70%);
   background: linear-gradient(96.27deg, #FF542F 27.34%, #B70000 128.11%);
@@ -28,5 +30,3 @@ p {
 button, a, li {
   cursor: pointer;
 }
-
-/*# sourceMappingURL=global.css.map */
