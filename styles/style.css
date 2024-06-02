@@ -82,15 +82,60 @@ main {
   justify-content: center;
   overflow: hidden;
 }
-#s2 #s2-container #s2-img img {
-  height: 800px;
-  padding-right: 250px;
-  padding-bottom: 200px;
-}
 #s2 #s2-container #s2-text {
   display: flex;
   align-items: center;
   justify-content: start;
+}
+#s2 #s2-container #s2-text p {
+  letter-spacing: 6%;
+  line-height: 18px;
+}
+
+#s2-s3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 120px;
+}
+#s2-s3 p {
+  color: white;
+  text-align: center;
+  line-height: 26px;
+}
+
+#s3 {
+  display: flex;
+  background-color: white;
+  background-image: url("/img/img04.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#s3 #s3-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+#s3 #s3-container #s3-carroucel {
+  overflow: hidden;
+}
+#s3 #s3-container #s3-carroucel #carrousel-container {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+#s3 #s3-container #s3-carroucel #carrousel-container img {
+  object-fit: cover;
+  scroll-snap-align: start;
 }
 
 @media screen and (max-width: 768px) {
@@ -132,8 +177,21 @@ main {
     overflow-y: scroll;
     height: 60%;
   }
+  #s2 #s2-container #s2-text::-webkit-scrollbar {
+    display: none;
+  }
   #s2 #s2-container #s2-text p {
     padding: 10px 15px 0 15px;
+  }
+  #s2-s3 p {
+    font-size: 0.6em;
+  }
+  #s3-title img {
+    height: 30px;
+    padding-top: 10px;
+  }
+  #carrousel-container img {
+    height: 230px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -146,6 +204,22 @@ main {
   #s2-container {
     flex-direction: column;
   }
+  #s2-container #s2-img {
+    height: 50%;
+  }
+  #s2-container #s2-img img {
+    height: 600px !important;
+    padding-right: 300px;
+    padding-bottom: 100px;
+  }
+  #s2-container #s2-text {
+    flex-direction: column;
+    align-items: start;
+    height: 50%;
+  }
+  #s2-container #s2-text p {
+    padding-top: 50px;
+  }
 }
 @media screen and (min-width: 993px) {
   #s1 {
@@ -156,6 +230,17 @@ main {
   }
   #s2-container div {
     width: 50%;
+  }
+  #s2-container #s2-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #s2-container #s2-img img {
+    height: 800px;
+    padding-right: 250px;
+    padding-bottom: 200px;
   }
 }
 .text-bold {
