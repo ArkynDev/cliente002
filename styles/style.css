@@ -131,11 +131,9 @@ main {
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
 }
 #s3 #s3-container #s3-carroucel #carrousel-container img {
   object-fit: cover;
-  scroll-snap-align: start;
 }
 
 @media screen and (max-width: 768px) {
