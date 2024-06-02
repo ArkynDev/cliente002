@@ -39,7 +39,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 
-    div {
+    #s1-container {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -78,8 +78,6 @@ main {
     background-color: white;
     background-repeat: no-repeat;background-position: center;
     background-size: cover;
-    border-top-right-radius: 24px;
-    border-top-left-radius: 24px;
     overflow: hidden;
 
     #s2-container {
@@ -185,6 +183,70 @@ main {
     background-size: 400px;
     background-position: center top;
     background-position-y: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    #s1 {
+        flex-direction: column;
+        background-image: url('../img/img01-mobile.png');
+        background-size:contain;
+
+        #s1-container {
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 124px;
+                padding-top: 50px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            button {
+                width: 250px;
+                height: 50px;
+                font-size: 1em;
+                margin-bottom: 50px;
+
+                span {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        #s1-botton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 100%;
+            height: 200px;
+            border-top-right-radius: 24px;
+            border-top-left-radius: 24px;
+
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+    #s2 {
+        background-color: white;
+        background-image: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    #s2 {
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+    }
 }
 
 .text-bold { font-weight: 900; }
