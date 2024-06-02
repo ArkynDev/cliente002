@@ -134,21 +134,35 @@ main {
         height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
         overflow: hidden;
-            
-        #carrousel-container {
-            display: flex;
-            width: 100%;
-            transition: transform 0.5s ease-in-out;
-            transform: translateX(0);
-            padding-top: 20px;
-            padding-left: 5px;
 
-            img {
-                object-fit: cover;
-                width: 100%;
+        #s3-title {
+            display: flex;
+            justify-content: center;
+        }
+
+        #s3-carroucel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            #carrousel-container {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                transform: translateX(0);
+                padding-top: 20px;
+                padding-left: 5px;
+    
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
             }
+        }
+
+        #s3-text {
+            display: flex;
+            justify-content: center;
         }
     }
 }
@@ -225,6 +239,17 @@ main {
         }
     }
 
+    #s3-text {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        p {
+            padding: 30px 20px;
+            font-size: 0.8em;
+        }
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -260,13 +285,22 @@ main {
         }
     }
 
+    #s3-title img {
+        height: 50px;
+        padding-top: 40px;
+    }
+
     #carrousel-container {
         padding-left: 64px !important;
-        gap: 12px;
+        gap: 64px;
 
         img {
             height: 400px !important;
         }
+    }
+
+    #s3-text p {
+        padding: 40px 30px;
     }
 }
 
@@ -299,6 +333,22 @@ main {
                 
             }
         }
+    }
+
+    #s3-title img {
+        height: 50px;
+        padding-top: 40px;
+    }
+
+    #carrousel-container {
+        img {
+            height: 180px;
+        }
+    }
+
+    #s3-text p {
+        padding: 50px 0;
+        font-size: 1em;
     }
 }
 
