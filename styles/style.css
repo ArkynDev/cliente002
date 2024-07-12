@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Grozen Medical";
   src: url("../fonts/grozenmedical/GROZEN-MEDICAL-Light.otf") format("opentype");
@@ -189,7 +190,7 @@ main {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
-  padding-left: 430px;
+  padding-left: 800px;
   padding-bottom: 80px;
   letter-spacing: 6%;
   line-height: 20px;
@@ -204,6 +205,79 @@ main {
   width: 350px;
   height: 70px;
   font-size: 1.5em;
+}
+
+#s6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+#s6 img {
+  width: 250px;
+}
+#s6 #tabela-de-planos {
+  display: flex;
+  gap: 64px;
+  padding-top: 100px;
+}
+#s6 #tabela-de-planos p {
+  font-family: "Grozen Medical", sans-serif;
+  color: white;
+}
+#s6 #tabela-de-planos .plano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 330px;
+}
+#s6 #tabela-de-planos .plano .planos-textos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+}
+#s6 #tabela-de-planos .plano .planos-textos p {
+  font-size: 2em;
+}
+#s6 #tabela-de-planos .plano .planos-textos .text-min {
+  font-size: 1em;
+}
+#s6 #tabela-de-planos .divider {
+  background-color: white;
+  width: 98%;
+  height: 2px;
+}
+#s6 #tabela-de-planos Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+}
+#s6 #tabela-de-planos Button p {
+  font-size: "Grozen Medical", sans-serif;
+  color: black;
+}
+#s6 #confirmação-planos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  gap: 32px;
+  width: 100%;
+}
+#s6 #confirmação-planos button {
+  width: 250px;
+}
+#s6 #confirmação-planos #plano-info {
+  background-color: white;
+  width: 85%;
+  height: 200px;
+  border-radius: 12px;
 }
 
 @media screen and (max-width: 768px) {
@@ -262,7 +336,7 @@ main {
     padding: 40px 0px !important;
   }
   #carrousel-container img {
-    height: 230px;
+    height: 200px;
   }
   #s3-text {
     display: flex;
@@ -377,7 +451,7 @@ main {
     padding-top: 80px !important;
   }
   #carrousel-container img {
-    height: 180px;
+    height: 140px;
   }
   #s3-text p {
     padding: 50px 0;
