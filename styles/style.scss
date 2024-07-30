@@ -312,10 +312,18 @@ main {
         }
 
         #plano-info {
+            display: flex;
+            align-items: center;
             background-color: white;
             width: 85%;
             height: 200px;
             border-radius: 12px;
+
+            p {
+                text-align: center;
+                width: 100%;
+                max-height: 100%;
+            }
         }
     }
 }
@@ -592,6 +600,10 @@ main {
 
     .br-mob {
         display: none;
+    }
+
+    #web-info-bronze {
+        font-size: 2em;
     }
 }
 
