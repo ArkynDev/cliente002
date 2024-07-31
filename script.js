@@ -1,18 +1,15 @@
-const container = document.querySelector('#carrousel-container');
+const bronzeText = document.querySelectorAll(".bronze-text");
+const prataText = document.querySelectorAll(".prata-text");
+const ouroText = document.querySelectorAll(".ouro-text");
 
-let cont = 0;
 let h;
 let screenSize;
 
-function slide() {
-    cont++;
-
-    if(cont > 2) {
-        cont = 0;
+document.getElementById('radioplanos').addEventListener('change', function(event) {
+    if (event.target.name === 'planos') {
+        checkRadioValue(event.target.value);
     }
-
-    container.style.transform = `translate(${-cont * h}px)`;
-}
+});
 
 function getScreenSize() {
     const width = window.innerWidth;
@@ -33,9 +30,61 @@ function displayScreenSize() {
 // Chama a função inicialmente
 displayScreenSize();
 
+function openWhatsApp(message) {
+    const phoneNumber = "5581993771316";
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.location.href = whatsappUrl;
+}
+
+function checkRadioValue(value) {
+    switchText(value);
+}
+
+function showElements(elements) {
+    elements.forEach(element => {
+        if (!element.classList.contains('show')) {
+            element.classList.add('show');
+        }
+        if (element.classList.contains('hide')) {
+            element.classList.remove('hide');
+        }
+    });
+}
+
+function hideElements(elements) {
+    elements.forEach(element => {
+        if (!element.classList.contains('hide')) {
+            element.classList.add('hide');
+        }
+        if (element.classList.contains('show')) {
+            element.classList.remove('show');
+        }
+    });
+}
+
+function switchText(p) {
+    console.log(p);
+    switch (p) {
+        case "bronze":
+            showElements(bronzeText);
+            hideElements(prataText);
+            hideElements(ouroText);
+            break;
+        case "prata":
+            hideElements(bronzeText);
+            showElements(prataText);
+            hideElements(ouroText);
+            break;
+        case "ouro":
+            hideElements(bronzeText);
+            hideElements(prataText);
+            showElements(ouroText);
+            break;
+        default:
+            break;
+    }
+}
+
 // Adiciona um event listener para atualizar o tamanho da tela em tempo real
 window.addEventListener('resize', displayScreenSize);
-
-if(screenSize.width < 993) {
-    setInterval(slide, 2000);
-}

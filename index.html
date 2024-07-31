@@ -21,7 +21,7 @@
                     Vem evoluir no geral<br> 
                     você também.
                 </h2>
-                <button class="primary-btn">FALE COMIGO <span class="material-symbols-outlined">south_east</span></button>
+                <button class="primary-btn" onclick="openWhatsApp('Ola gostaria de mais informações sobre seu trabalho.')">FALE COMIGO <span class="material-symbols-outlined">south_east</span></button>
             </div>
         </section>
         <section id="s2">
@@ -70,8 +70,15 @@
                 <div id="s3-title">
                     <img src="img/component02.png" alt="">
                 </div>
-                <div id="s3-carroucel">
+                <div id="s3-carroucel" class="scroller">
                     <div id="carrousel-container">
+                        <img src="img/Carrousel01.png" alt="carrosel1" class="slide-img">
+                        <img src="img/Carrousel02.png" alt="carrosel2" class="slide-img">
+                        <img src="img/Carrousel03.png" alt="carrosel3" class="slide-img">
+                        <img src="img/Carrousel04.png" alt="carrosel4" class="slide-img">
+                        <img src="img/Carrousel05.png" alt="carrosel5" class="slide-img">
+                        <img src="img/Carrousel06.png" alt="carrosel6" class="slide-img">
+
                         <img src="img/Carrousel01.png" alt="carrosel1" class="slide-img">
                         <img src="img/Carrousel02.png" alt="carrosel2" class="slide-img">
                         <img src="img/Carrousel03.png" alt="carrosel3" class="slide-img">
@@ -116,7 +123,7 @@
                     </p>
                 </div>
                 <div id="s5-button">
-                    <button class="primary-btn">FALE COMIGO <span class="material-symbols-outlined">south_east</span></button>
+                    <button class="primary-btn" onclick="openWhatsApp('Ola gostaria de mais informações sobre seu trabalho.')">FALE COMIGO <span class="material-symbols-outlined">south_east</span></button>
                 </div>
             </div>
         </section>
@@ -130,7 +137,7 @@
                         <p class="text-min">Mensais</p>
                     </div>
                     <div class="divider"></div>
-                    <button><p class="text-bold">Saiba Mais</p></button>
+                    <button onclick="switchText('bronze')"><p class="text-bold">Saiba Mais</p></button>
                 </div>
                 <div class="plano">
                     <div class="planos-textos">
@@ -139,7 +146,7 @@
                         <p class="text-min">Mensais</p>
                     </div>
                     <div class="divider"></div>
-                    <button><p class="text-bold">Saiba Mais</p></button>
+                    <button onclick="switchText('prata')"><p class="text-bold">Saiba Mais</p></button>
                 </div>
                 <div class="plano">
                     <div class="planos-textos">
@@ -148,37 +155,55 @@
                         <p class="text-min">Mensais</p>
                     </div>
                     <div class="divider"></div>
-                    <button><p class="text-bold">Saiba Mais</p></button>
+                    <button onclick="switchText('ouro')"><p class="text-bold">Saiba Mais</p></button>
                 </div>
             </div>
             <div id="confirmação-planos">
-                <button class="primary-btn">FALE COMIGO <span class="material-symbols-outlined">south_east</span></button>
+                <button class="primary-btn" onclick="openWhatsApp('Ola gostaria de mais informações sobre seu trabalho.')">FALE COMIGO <span class="material-symbols-outlined">south_east</span></button>
                 <div id="plano-info">
-                    <p id="web-info-bronze">
+                    <p class="resizableText bronze-text" >
                         Planilha de treino através do aplicativo TREINUS<br>Feedback e dúvidas via whatsapp<br>Ideal para quem utiliza frequência cardíaca.<br>Grupo Exclusivo com todos os alunos.
+                    </p>
+
+                    <p class="resizableText prata-text hide">
+                        Ideal para quem utiliza Frequência cardíaca ou potênciaPlanilha de treino através do aplicativo Training Peaks Monitoramento de carga e sobrecarga Definição de ciclos com importância A, B ou C para eventos. Acompanhamento diário do treino, caso não realize o treino, contato via whatsapp para saber o motivo Acesso a todos os grupos da Assessoria É PÓDIO.
+                    </p>
+
+                    <p class="resizableText ouro-text hide">
+                        Ideal para quem quer conhecer o fantastico mundo dos MEDIDORES DE POTENCIA. Acompanhamento diário através de TRAINING PEAKS Análise minuciosa do treino passivel de feedback caso haja deformidade Planejamento e discussão sobre plano de carreira e definições profissionais Métricas do Training Peaks PREMIUM vão servir para analisar e projetar seu PICO DE PERFORMANCE, aumentando as chances de chegar 100% na prova ALVO. Indicação de livros/séries e documentários que vão te fazer TREINAR A MENTE, QUANDO NÃO PUDER TREINAR O CORPO.
                     </p>
                 </div>
             </div>
 
             <div id="planos-mobile">
-                <div class="radio-inputs">
+                <form id="radioplanos" class="radio-inputs">
                     <label class="radio">
-                        <input type="radio" name="plano" value="bronze" checked="">
+                        <input type="radio" name="planos" value="bronze" checked="">
                         <span class="name">Bronze</span>
                     </label>
                     <label class="radio">
-                        <input type="radio" name="plano" value="prata">
+                        <input type="radio" name="planos" value="prata">
                         <span class="name">Prata</span>
                     </label>
                         
                     <label class="radio">
-                        <input type="radio" name="plano" value="ouro">
+                        <input type="radio" name="planos" value="ouro">
                         <span class="name">Ouro</span>
                     </label>
-                </div>
+                </form>
                 <button class="primary-btn">FALE COMIGO <span class="material-symbols-outlined">south_east</span></button>
                 <div id="plano-info">
+                    <p class="resizableText bronze-text">
+                        Planilha de treino através do aplicativo TREINUS<br>Feedback e dúvidas via whatsapp<br>Ideal para quem utiliza frequência cardíaca.<br>Grupo Exclusivo com todos os alunos.
+                    </p>
 
+                    <p class="resizableText prata-text hide">
+                        Ideal para quem utiliza Frequência cardíaca ou potênciaPlanilha de treino através do aplicativo Training Peaks Monitoramento de carga e sobrecarga Definição de ciclos com importância A, B ou C para eventos. Acompanhamento diário do treino, caso não realize o treino, contato via whatsapp para saber o motivo Acesso a todos os grupos da Assessoria É PÓDIO.
+                    </p>
+
+                    <p class="resizableText ouro-text hide">
+                        Ideal para quem quer conhecer o fantastico mundo dos MEDIDORES DE POTENCIA. Acompanhamento diário através de TRAINING PEAKS Análise minuciosa do treino passivel de feedback caso haja deformidade Planejamento e discussão sobre plano de carreira e definições profissionais Métricas do Training Peaks PREMIUM vão servir para analisar e projetar seu PICO DE PERFORMANCE, aumentando as chances de chegar 100% na prova ALVO. Indicação de livros/séries e documentários que vão te fazer TREINAR A MENTE, QUANDO NÃO PUDER TREINAR O CORPO.
+                    </p>
                 </div>
             </div>
         </section>
