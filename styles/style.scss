@@ -495,9 +495,13 @@ main {
                 gap: 12px;
                 padding: 16px;
                 background-color: white;
-                max-width: 80%;
-                height: 300px;
+                max-width: 85%;
+                height: max-content;
                 border-radius: 12px;
+            }
+
+            .resizableText {
+                margin-left: 10px;
             }
         }
     }
@@ -731,9 +735,11 @@ main {
     'opsz' 24
 }
 
-.resizableText {
-    font-family: $font-2 !important;
-}
+.resizableText li {
+        text-align: start;
+        font-family: $font-2 !important;
+        padding-top: 6px;
+    }
 
 @keyframes scroll {
     to {
