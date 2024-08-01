@@ -140,7 +140,7 @@ main {
   display: flex;
   gap: 10px;
   width: max-content !important;
-  animation: scroll 15s linear infinite;
+  animation: scroll 8s linear infinite;
 }
 #s3 #s3-container #s3-carroucel #carrousel-container img {
   object-fit: cover;
