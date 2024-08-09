@@ -140,7 +140,6 @@ main {
   display: flex;
   gap: 10px;
   width: max-content !important;
-  animation: scroll 8s linear infinite;
 }
 #s3 #s3-container #s3-carroucel #carrousel-container img {
   object-fit: cover;
@@ -284,14 +283,14 @@ main {
   align-items: center;
   justify-content: center;
   background-color: white;
-  width: 85%;
+  width: 90%;
   height: 200px;
   border-radius: 12px;
   padding: 14px;
 }
-#s6 #confirmação-planos #plano-info p {
+#s6 #confirmação-planos #plano-info ul {
   text-align: center;
-  width: 100%;
+  width: 95%;
   max-height: 100%;
 }
 
@@ -357,6 +356,7 @@ main {
   }
   #s3-carroucel #carrousel-container {
     padding: 40px 0px;
+    animation: scroll 8s linear infinite;
   }
   #s3-carroucel #carrousel-container img {
     height: 140px;
@@ -427,6 +427,15 @@ main {
     height: max-content;
     border-radius: 12px;
   }
+  #s6 #planos-mobile #plano-info h2 {
+    width: 100%;
+  }
+  #s6 #planos-mobile #plano-info h2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
   #s6 #planos-mobile .resizableText {
     margin-left: 10px;
   }
@@ -467,6 +476,7 @@ main {
   }
   #carrousel-container {
     padding: 80px 0px !important;
+    animation: scroll 12s linear infinite;
   }
   #carrousel-container img {
     height: 250px;
@@ -545,6 +555,7 @@ main {
   }
   #carrousel-container {
     padding: 40px 10px !important;
+    animation: scroll 12s linear infinite;
   }
   #carrousel-container img {
     height: 140px;

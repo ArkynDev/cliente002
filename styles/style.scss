@@ -76,6 +76,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
     background-image: url('../img/bg02.png');
     background-repeat: no-repeat;
@@ -158,7 +159,6 @@ main {
                 display: flex;
                 gap: 10px;
                 width: max-content !important;
-                animation: scroll 8s linear infinite;
     
                 img {
                     object-fit: cover;
@@ -326,14 +326,14 @@ main {
             align-items: center;
             justify-content: center;
             background-color: white;
-            width: 85%;
+            width: 90%;
             height: 200px;
             border-radius: 12px;
             padding: 14px;
 
-            p {
+            ul {
                 text-align: center;
-                width: 100%;
+                width: 95%;
                 max-height: 100%;
             }
         }
@@ -416,6 +416,7 @@ main {
 
         #carrousel-container {
             padding: 40px 0px;
+            animation: scroll 8s linear infinite;
     
             img {
                 height: 140px;
@@ -498,6 +499,17 @@ main {
                 max-width: 85%;
                 height: max-content;
                 border-radius: 12px;
+
+                h2 {
+                    width: 100%;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                    }
+                }
             }
 
             .resizableText {
@@ -552,6 +564,7 @@ main {
 
     #carrousel-container {
         padding: 80px 0px !important;
+        animation: scroll 12s linear infinite;
 
         img {
             height: 250px;
@@ -653,6 +666,7 @@ main {
 
     #carrousel-container {
         padding: 40px 10px !important;
+        animation: scroll 12s linear infinite;
 
         img {
             height: 140px;
