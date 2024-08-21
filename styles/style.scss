@@ -302,6 +302,27 @@ main {
             height: 40px;
             border-radius: 4px;
             border: none;
+            letter-spacing: 5px;
+
+            text-transform: uppercase;
+            transition: all 1000ms;
+            position: relative;
+            overflow: hidden;
+            outline: 2px solid #cd1a0f;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -50px;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background-color: #cd1a0f;
+                transform: skewX(45deg);
+                z-index: -1;
+                transition: width 1000ms;
+            }
+
             p {
                 font-size: $font-1;
                 color: black;
@@ -342,6 +363,16 @@ main {
 
 #planos-mobile {
     display: none;
+}
+
+.pacoteSelected::before {
+    width: 250% !important;
+    outline: 2px solid #ff542f !important;
+    box-shadow: 4px 5px 17px -4px #cd1a0f !important;
+
+    p {
+        color: white !important;
+    }
 }
 
 @media screen and (max-width: 768px) {

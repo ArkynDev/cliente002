@@ -70,6 +70,7 @@ function switchText(p) {
             showElements(bronzeText);
             hideElements(prataText);
             hideElements(ouroText);
+            document.getElementById('bronze-btn').classList.add('pacoteSelected');
             break;
         case "prata":
             hideElements(bronzeText);
